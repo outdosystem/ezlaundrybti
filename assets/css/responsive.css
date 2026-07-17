@@ -1,0 +1,74 @@
+/* Responsive rules */
+@media (max-width: 1199px) {
+  .nav-main { gap: 1.4rem; }
+  .mega { min-width: 520px; }
+}
+
+@media (max-width: 991px) {
+  .section { padding: 90px 0; }
+  .hero { padding: 160px 0 90px; }
+  .page-hero { padding: 150px 0 80px; }
+
+  .nav-main, .header-cta .btn-primary-lux { display: none; }
+  .header-cta .btn-outline-lux { display: none; }
+  .nav-toggle { display: inline-flex; }
+
+  .site-header .nav-inner { padding: 8px 8px 8px 20px; }
+
+  .hero-visual { margin-top: 60px; aspect-ratio: 5/4; }
+  .hero-badge.tl { top: 20px; left: 10px; }
+  .hero-badge.br { bottom: 20px; right: 10px; }
+
+  .timeline::before { left: 30px; }
+  .tl-item { grid-template-columns: 60px 1fr; gap: 20px; }
+  .tl-item:nth-child(even) .tl-content,
+  .tl-item:nth-child(odd) .tl-content { grid-column: 2; text-align: left; padding: 12px 0; }
+  .tl-item .tl-spacer { display: none; }
+  .tl-dot { grid-column: 1; width: 60px; height: 60px; font-size: 1.15rem; }
+
+  .feature-split .cell { padding: 60px 30px; }
+
+  .gallery-grid { grid-template-columns: repeat(2,1fr); }
+  .ig-grid { grid-template-columns: repeat(3,1fr); }
+
+  .contact-form { padding: 32px; }
+
+  .cta-banner { padding: 56px 32px; text-align: center; }
+  .cta-banner .btn { margin-top: 20px; }
+}
+
+@media (max-width: 767px) {
+  h1 { font-size: 2.5rem; }
+  h2 { font-size: 2rem; }
+  .section { padding: 72px 0; }
+  .hero { padding: 140px 0 72px; }
+  .hero-visual { aspect-ratio: 1; }
+
+  .lux-card { padding: 32px 24px; }
+  .lux-card .num { font-size: 2rem; }
+
+  .price-card.featured { transform: none; }
+  .price-card.featured:hover { transform: translateY(-6px); }
+
+  .stat-item { margin-bottom: 40px; }
+
+  .t-card { padding: 30px 24px; }
+  .t-card blockquote { font-size: 1.15rem; }
+
+  .faq-q { font-size: 1.1rem; }
+  .faq-q .plus { width: 36px; height: 36px; }
+
+  .foot-bottom { flex-direction: column; text-align: center; }
+
+  .sh-wrap { margin-bottom: 44px; }
+
+  .compare-table { font-size: .85rem; }
+  .compare-table th, .compare-table td { padding: 12px; }
+}
+
+@media (max-width: 480px) {
+  .gallery-grid { grid-template-columns: 1fr; }
+  .ig-grid { grid-template-columns: repeat(2,1fr); }
+  .contact-form { padding: 24px; }
+  .brand small { display: none; }
+}
